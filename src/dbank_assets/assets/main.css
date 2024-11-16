@@ -144,6 +144,30 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* Ensure content sections are not overlapping */
 .content-section {
-  display: none;
+  display: flex;
   margin-top: 20px;
 }
+.recent-trans {
+  margin: 20px 0;
+}
+
+.recent-trans ul {
+  list-style: none; /* Remove default bullets */
+  padding: 0; /* Remove default padding */
+}
+
+.recent-trans li {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out items */
+  align-items: center; /* Align items vertically */
+  margin: 10px 0; /* Add margin between transactions */
+  padding: 10px; /* Add some padding */
+  border: 1px solid #ccc; /* Optional: Add border */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.transaction-date {
+  margin-left: auto; /* Push date to the right */
+  font-style: italic; /* Optional: Style date differently */
+}
+
