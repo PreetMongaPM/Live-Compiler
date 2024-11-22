@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = stylesheet href="styles.css">
+    <title>Live Compiler</title>
+    
+</head>
+<body>
+    <h1>C++ Compiler</h1>
+    <form action="post">
+        <div class="main">
+            <div class="codeEditor">
+                <label for="codeEditor">Code Editor</label><br>
+                <textarea id="codeEditor" rows = 30 cols = 100 name="codeEditor" placeholder="write your code here"></textarea><br>
+                <button class = "run" type="submit">Run</button>
+                <button class = "reset" type="reset">Reset</button>
+            </div>
+            <div class="Output">
+                <label for="outputField">Output</label>
+                <textarea id = "outputField" rows = 30 cols = 100 name = "output"></textarea>
+            </div>
+
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- So we have many issues to care about: 
+1. When i submit in this, it should send the data to other container.
+2. the input should be stored in some text file that will be fetched by my c++ code and will be executed.
+3. The compiler will give some output that we need to read and send back to the output field and display. 
+4. Design better-->
